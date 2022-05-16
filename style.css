@@ -13,14 +13,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-div {
-  border: 1px solid red;
-}
-
-h2{
+h2 {
   font-size: 42px;
   color: #F9FAF8;
-  font-weight:bolder;
+  font-weight: bolder;
   margin: 0;
 }
 
@@ -44,6 +40,7 @@ a {
   text-decoration: none;
   color: var(--c-txt-white);
 }
+
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -77,9 +74,10 @@ blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 2em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -88,6 +86,7 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
@@ -101,7 +100,7 @@ blockquote p {
   max-width: 1280px;
 }
 
-.wrapper, 
+.wrapper,
 .sectionCenter {
   display: flex;
   justify-content: center;
@@ -116,18 +115,18 @@ blockquote p {
 
 /*--- Main Classes and IDs -----*/
 
-.headerWrap{
+.headerWrap {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   background: #1F2937;
 }
 
-.headerWrap p{
+.headerWrap p {
   color: #E5E7EB;
 }
 
-.wrapper:first-of-type{
+.wrapper:first-of-type {
   flex-direction: column;
   justify-content: center;
   align-self: center;
@@ -151,14 +150,14 @@ blockquote p {
 
 }
 
-.navLogo img{
+.navLogo img {
   height: 75px;
   width: auto;
   object-fit: fill;
 }
 
-@media (max-width: 800px) { 
-  .navLogo img{
+@media (max-width: 800px) {
+  .navLogo img {
     height: 50px;
     width: auto;
     object-fit: fill;
@@ -209,7 +208,7 @@ blockquote p {
   border-radius: 7px;
 }
 
-.button-1{
+.button-1 {
   align-self: center;
   width: 40%;
 }
@@ -220,33 +219,60 @@ blockquote p {
   padding-bottom: 5em;
 }
 
-.galleryBox{
+.galleryBox {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 8em;
+  gap: 2.8em;
 }
 
-@media (max-width:600px) {
-  .galleryBox{
-  gap:5em;
+.infoBox {
+  width: 170px;
+  height: 170px;
+}
+
+.infoBox img {
+  height: 170px;
+  width: auto;
+  border-radius: 25px; 
+}
+
+@media (max-width:800px) {
+  .galleryBox {
+    gap: 0.5em;
   }
 }
 
-.infoBox{
-  width: 100px;
-  height: 100px;
+@media (max-width:600px) {
+  .galleryBox {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1em;
+  }
+
+  .infoBox {
+    display: inline-block;
+    width: 250px;
+    height: auto;
+  }
+
+  .infoBox img {
+    height: auto;
+    width: 250px;
+  }
 }
 
-#sectionThree {
+
+#sectionThree, #sectionFour {
   max-width: 775px;
 }
 
+.flex-end{
+  align-self: flex-end;
+  padding-right: 6rem;
+}
+
 #sectionFour {}
-
-.button-1 {}
-
-.button-2 {}
 
 footer {
   display: flex;
