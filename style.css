@@ -181,6 +181,8 @@ blockquote p {
   gap: 3rem;
   padding-bottom: 3em;
   padding-top: 1em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #heroLeft,
@@ -193,6 +195,8 @@ blockquote p {
   flex-direction: column;
   justify-content: stretch;
   max-width: 500px;
+  gap:0.6em;
+
 }
 
 #heroRight {
@@ -206,6 +210,19 @@ blockquote p {
   object-fit: cover;
   max-height: calc(214px + 1rem);
   border-radius: 7px;
+}
+
+@media (max-width:600px){
+  #sectionOne {
+  flex-direction: column;
+  }
+
+  #heroLeft {
+    align-self: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width:80%;
+  }
 }
 
 .button-1 {
@@ -262,17 +279,45 @@ blockquote p {
   }
 }
 
+.wrapper:nth-of-type(3){
+  background-color: #1F2937;
+}
 
-#sectionThree, #sectionFour {
+#sectionThree {
   max-width: 775px;
+  margin-bottom: 3rem;
+}
+
+#sectionThree figcaption{
+  font-size: large;
+  color: #eee;
+}
+
+#sectionFour{
+  max-width: 750px;
+  background-color: #3882F6;
+  margin: 10px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 25px 5rem 25px 5rem;
+  border-radius: 25px;
+}
+
+#sectionFour p{
+  color:#eee;
+}
+
+#sectionFour .button-1 {
+  align-self: flex-end;
+  color: #eee;
+  border: 1px solid #eee;
+  background-color: #3882F6;
 }
 
 .flex-end{
   align-self: flex-end;
   padding-right: 6rem;
 }
-
-#sectionFour {}
 
 footer {
   display: flex;
