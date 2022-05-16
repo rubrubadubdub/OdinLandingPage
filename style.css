@@ -87,6 +87,7 @@ input {
 .wrapper:first-of-type{
   flex-direction: column;
   justify-content: center;
+  align-self: center;
 }
 
 #header {
