@@ -13,6 +13,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+div{
+  border: 1px solid red;
+}
+
 h3 {
   margin-top: 0;
   font-size: 36px;
@@ -54,7 +58,7 @@ button {
 
   #header, #sectionOne
 .sectionCenter {
-  max-width: 1440px;
+  max-width: 1280px;
 }
 
 .wrapper,
@@ -66,7 +70,7 @@ button {
 .sectionCenter {
   flex-direction: column;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 3em;
 }
 
   
@@ -76,16 +80,30 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex: 0 1 auto;
-    padding: 16px;
+    flex: 1 1 auto;
+    padding: 22px 16px 22px 16px;
+    background-color: #1F2937;
   }
 
   .navLogo{
+    align-self: flex-start;
 
+  }
+  
+  .navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    flex: 0 1 auto;
+    gap: 3rem;
   }
 
   #sectionOne{
-
+  background-color: #1F2937;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
   }
 
   #heroLeft{
