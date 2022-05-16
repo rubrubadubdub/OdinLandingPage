@@ -54,6 +54,26 @@ input {
   margin-bottom: 16px;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
 /*--- Shared ---*/
 
 #header,
@@ -118,6 +138,8 @@ input {
   justify-content: space-between;
   flex: 0 1 0;
   gap: 3rem;
+  padding-bottom: 3em;
+  padding-top: 2em;
 }
 
 #heroLeft,
@@ -126,7 +148,10 @@ input {
 }
 
 #heroLeft {
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
 }
 
 #heroRight {
@@ -141,9 +166,33 @@ input {
   border-radius: 7px;
 }
 
-#sectionTwo {}
+#sectionTwo {
+  display: flex;
+  flex-basis: 100%;
+  padding-bottom: 5em;
+}
 
-#sectionThree {}
+.galleryBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 8em;
+}
+
+@media (max-width:600px) {
+  .galleryBox{
+  gap:5em;
+  }
+}
+
+.infoBox{
+  width: 100px;
+  height: 100px;
+}
+
+#sectionThree {
+  max-width: 775px;
+}
 
 #sectionFour {}
 
@@ -154,7 +203,7 @@ input {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex: 0 1 0px;
   background-color: rgb(226, 226, 226);
   padding: 16px;
