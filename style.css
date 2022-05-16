@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-txt-white);
 }
 
 button {
@@ -24,30 +41,66 @@ button {
     margin-bottom: 16px;
   }
   
-  .box{
-    display: flex;
-    flex-direction: column;
-    height:100%;
-  }
+/*--- Shared ---*/
+
+  #header, #sectionOne
+.sectionCenter {
+  max-width: 1440px;
+}
+
+.wrapper,
+.sectionCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionCenter {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
   
-  .box .header{
+/*--- Main Classes and IDs -----*/
+
+  #header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex: 0 1 auto;
     padding: 16px;
   }
-  
-  .box .content{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 auto;
-    min-height: 400px;
+
+  .navLogo{
+    
   }
-  
-  .box .footer{
+
+  #sectionOne{
+
+  }
+
+  #heroLeft{
+
+  }
+
+  #heroRight{
+
+  }
+
+  #sectionTwo{
+    
+  }
+
+  #sectionThree{
+    
+  }
+
+  #sectionFour{
+    
+  }
+
+
+  footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
